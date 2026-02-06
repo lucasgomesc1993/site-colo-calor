@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #9D5951;
+  --color-beige: #E7D0BC;
+  --color-cream: #F7EBE0;
+
+  --font-cormorant: var(--font-cormorant);
+  --font-raleway: var(--font-raleway);
+}
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: var(--font-raleway);
+  background-color: var(--color-cream);
+  color: var(--color-terracotta);
+}
