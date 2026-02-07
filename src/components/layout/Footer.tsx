@@ -46,10 +46,10 @@ export function Footer() {
 
                     {/* Column 2: Links Rápidos */}
                     <div>
-                        <h4 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
+                        <h3 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
                             Links Rápidos
                             <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-beige rounded-full opacity-60"></span>
-                        </h4>
+                        </h3>
                         <ul className="space-y-3 font-raleway text-sm">
                             <li><Link href="/" className="text-white/70 hover:text-white transition-colors duration-200">Início</Link></li>
                             <li><Link href="/servicos" className="text-white/70 hover:text-white transition-colors duration-200">Serviços</Link></li>
@@ -61,10 +61,10 @@ export function Footer() {
 
                     {/* Column 3: Contato */}
                     <div>
-                        <h4 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
+                        <h3 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
                             Contato
                             <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-beige rounded-full opacity-60"></span>
-                        </h4>
+                        </h3>
                         <ul className="space-y-4 font-raleway text-sm">
                             <li>
                                 <a href="https://wa.me/5511999494829" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 text-white/70 hover:text-white transition-all duration-200">
@@ -87,10 +87,10 @@ export function Footer() {
 
                     {/* Column 4: Localização */}
                     <div>
-                        <h4 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
+                        <h3 className="font-cormorant text-2xl text-white mb-6 tracking-tight relative inline-block">
                             Onde Atuamos
                             <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-beige rounded-full opacity-60"></span>
-                        </h4>
+                        </h3>
                         <div className="space-y-4 font-raleway text-sm">
                             <div className="flex gap-3 text-white/70 group">
                                 <span className="p-2 bg-white/5 group-hover:bg-white/10 h-fit rounded-lg transition-colors">

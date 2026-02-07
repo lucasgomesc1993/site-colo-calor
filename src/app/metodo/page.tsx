@@ -373,7 +373,7 @@ export default function MetodoPage() {
                             </div>
 
                             <div className="bg-white p-8 md:p-12 text-gray-800 shadow-2xl">
-                                <h4 className="font-cormorant text-2xl text-terracotta mb-6">Além do investimento financeiro, considere:</h4>
+                                <h3 className="font-cormorant text-2xl text-terracotta mb-6">Além do investimento financeiro, considere:</h3>
                                 <ul className="space-y-4 font-raleway text-gray-600 mb-8">
                                     <li className="flex items-center gap-3"><FaCheck className="text-terracotta" /> Gasto mensal recorrente por até 2 anos</li>
                                     <li className="flex items-center gap-3"><FaCheck className="text-terracotta" /> Investimento em acessórios (mamadeiras, bicos)</li>
@@ -415,7 +415,7 @@ export default function MetodoPage() {
                                 <div className="absolute top-0 left-0 w-1 h-full bg-cream group-hover:bg-terracotta transition-colors"></div>
                                 <div>
                                     <span className="text-xs font-bold text-terracotta/50 uppercase tracking-widest mb-2 block">{item.id}</span>
-                                    <h4 className="font-cormorant text-xl text-gray-800 font-bold mb-4">{item.title}</h4>
+                                    <h3 className="font-cormorant text-xl text-gray-800 font-bold mb-4">{item.title}</h3>
                                 </div>
                                 <div className="flex justify-end">
                                     <span className="text-terracotta font-raleway text-sm font-bold">R$ {item.price}</span>
@@ -485,12 +485,12 @@ export default function MetodoPage() {
                     <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                         <div className="relative pl-12">
                             <div className="absolute left-0 top-0 w-10 h-10 bg-terracotta text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-                            <h4 className="font-cormorant text-2xl text-gray-800 mb-4 font-bold">Você começa pelo Plano de Resgate da Amamentação</h4>
+                            <h3 className="font-cormorant text-2xl text-gray-800 mb-4 font-bold">Você começa pelo Plano de Resgate da Amamentação</h3>
                             <p className="font-raleway text-gray-600">O acesso imediato ao método completo para resolver suas dores e dificuldades.</p>
                         </div>
                         <div className="relative pl-12">
                             <div className="absolute left-0 top-0 w-10 h-10 bg-cream text-terracotta rounded-full flex items-center justify-center font-bold text-xl border-2 border-terracotta">2</div>
-                            <h4 className="font-cormorant text-2xl text-gray-800 mb-4 font-bold">No checkout, se sentir necessidade, pode adicionar:</h4>
+                            <h3 className="font-cormorant text-2xl text-gray-800 mb-4 font-bold">No checkout, se sentir necessidade, pode adicionar:</h3>
                             <ul className="space-y-4 font-raleway text-gray-600">
                                 <li className="flex items-start gap-2">
                                     <CheckCircle2 className="text-terracotta shrink-0 mt-1" size={18} />
