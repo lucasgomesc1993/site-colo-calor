@@ -134,7 +134,7 @@ export default function Home() {
               <div className="absolute -top-10 -left-10 w-20 h-20 bg-beige/50 rounded-full blur-xl" />
               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-terracotta/10 rounded-full blur-xl" />
               <Image
-                src="/images/amamentacao1.jpg"
+                src="/images/amamentacao1.webp"
                 alt="Ilustração Método Colo e Calor"
                 width={400}
                 height={400}
@@ -177,7 +177,7 @@ export default function Home() {
               features={["São Paulo", "Guarulhos", "ABC", "Vales"]}
               actionLabel="Ver atendimentos presenciais"
               href="/servicos"
-              backgroundImage="/images/presencial-home.jpg"
+              backgroundImage="/images/presencial-home.webp"
             />
             <ModalityCard
               icon={<Video size={32} />}
@@ -186,7 +186,7 @@ export default function Home() {
               actionLabel="Ver atendimentos online"
               href="/servicos"
               isPrimary
-              backgroundImage="/images/online-home.jpg"
+              backgroundImage="/images/online-home.webp"
             />
           </div>
         </Container>
@@ -196,7 +196,7 @@ export default function Home() {
       <Section id="servicos" className="relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/fundo.jpeg"
+            src="/images/fundo.webp"
             alt="Fundo decorativo"
             fill
             className="object-cover"
@@ -265,7 +265,7 @@ export default function Home() {
             <div className="md:col-span-5 relative">
               <div className="relative aspect-[3/4] rounded-none overflow-hidden shadow-2xl border-4 border-terracotta/10">
                 <Image
-                  src="/images/camila.jpeg"
+                  src="/images/camila.webp"
                   alt="Camila Toniatti - Consultora em Aleitamento Materno"
                   fill
                   className="object-cover object-center"

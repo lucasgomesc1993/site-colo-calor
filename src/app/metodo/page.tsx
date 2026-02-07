@@ -73,6 +73,7 @@ const faqs = [
 
 export default function MetodoPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
+    const [showVideo, setShowVideo] = useState(false);
 
     return (
         <main className="min-h-screen pt-20">
@@ -101,15 +102,38 @@ export default function MetodoPage() {
                         </p>
                     </div>
 
-                    {/* Video Placeholder/Embed */}
-                    <div className="max-w-4xl mx-auto aspect-video mb-12 shadow-2xl relative group">
-                        <iframe
-                            className="w-full h-full"
-                            src="https://www.youtube.com/embed/lrTpcHoqdLg"
-                            title="Plano de Resgate da Amamentação"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
+                    {/* Video Placeholder/Embed - Optimized with Facade Pattern */}
+                    <div className="max-w-4xl mx-auto aspect-video mb-12 shadow-2xl relative group bg-black overflow-hidden">
+                        {!showVideo ? (
+                            <button
+                                onClick={() => setShowVideo(true)}
+                                className="w-full h-full relative flex items-center justify-center group cursor-pointer"
+                                aria-label="Reproduzir vídeo"
+                            >
+                                <Image
+                                    src="https://img.youtube.com/vi/lrTpcHoqdLg/maxresdefault.jpg"
+                                    alt="Capa do vídeo Plano de Resgate da Amamentação"
+                                    fill
+                                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="w-20 h-20 bg-terracotta/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 pl-1">
+                                        <FaYoutube className="text-white text-4xl" />
+                                    </div>
+                                </div>
+                                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+                                    <p className="text-white font-raleway text-sm font-bold uppercase tracking-widest">Clique para assistir</p>
+                                </div>
+                            </button>
+                        ) : (
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/lrTpcHoqdLg?autoplay=1"
+                                title="Plano de Resgate da Amamentação"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        )}
                     </div>
 
                     <div className="flex flex-col items-center gap-6">
@@ -157,32 +181,32 @@ export default function MetodoPage() {
                             {[
                                 {
                                     title: "Bebê não pega o peito corretamente",
-                                    image: "/images/problems/pega-incorreta.png",
+                                    image: "/images/problems/pega-incorreta.webp",
                                     desc: "Dificuldade inicial que gera dor e baixa transferência de leite."
                                 },
                                 {
                                     title: "Bebê mama e não se satisfaz",
-                                    image: "/images/problems/bebe-insatisfeito.png",
+                                    image: "/images/problems/bebe-insatisfeito.webp",
                                     desc: "Sinal de que a mamada precisa de ajustes técnicos imediatos."
                                 },
                                 {
                                     title: "Fissura no peito ao amamentar",
-                                    image: "/images/problems/fissura-dor.png",
+                                    image: "/images/problems/fissura-dor.webp",
                                     desc: "O resultado direto de uma pega incorreta que torna o processo sofrido."
                                 },
                                 {
                                     title: "Medo da próxima mamada",
-                                    image: "/images/problems/medo-proxima-mamada.png",
+                                    image: "/images/problems/medo-proxima-mamada.webp",
                                     desc: "Ansiedade e tensão que bloqueiam a ocitocina e a descida do leite."
                                 },
                                 {
                                     title: "Introdução precoce de fórmula",
-                                    image: "/images/problems/introducao-formula.png",
+                                    image: "/images/problems/introducao-formula.webp",
                                     desc: "Muitas vezes feita por insegurança, sem necessidade real."
                                 },
                                 {
                                     title: "Introdução de bicos artificiais",
-                                    image: "/images/problems/bicos-artificiais.png",
+                                    image: "/images/problems/bicos-artificiais.webp",
                                     desc: "Confusão de bicos que compromete a amamentação a longo prazo."
                                 }
                             ].map((problem, i) => (
@@ -319,7 +343,7 @@ export default function MetodoPage() {
             <Section className="relative text-white overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/fundo.jpeg"
+                        src="/images/fundo.webp"
                         alt="Fundo decorativo"
                         fill
                         className="object-cover"
@@ -500,7 +524,7 @@ export default function MetodoPage() {
                     <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
                         <div className="relative aspect-[4/5] shadow-2xl overflow-hidden group">
                             <Image
-                                src="/images/camila.jpeg"
+                                src="/images/camila.webp"
                                 alt="Camila Toniatti"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-700"
