@@ -54,9 +54,9 @@ export default function BlogPage() {
                                             <span className="text-gray-300">•</span>
                                             <span className="text-gray-400 font-medium">{post.date}</span>
                                         </div>
-                                        <h3 className="font-cormorant text-2xl text-gray-800 font-bold mb-4 group-hover:text-terracotta transition-colors line-clamp-3">
+                                        <h2 className="font-cormorant text-2xl text-gray-800 font-bold mb-4 group-hover:text-terracotta transition-colors line-clamp-3">
                                             {post.title}
-                                        </h3>
+                                        </h2>
                                         <p className="font-raleway text-gray-600 text-sm mb-6 line-clamp-3">
                                             {post.excerpt}
                                         </p>
@@ -72,7 +72,7 @@ export default function BlogPage() {
 
                     {blogPosts.length === 0 && (
                         <div className="bg-white p-12 text-center shadow-sm border border-gray-100 max-w-2xl mx-auto">
-                            <h3 className="font-cormorant text-3xl text-gray-800 mb-4">Em breve</h3>
+                            <h2 className="font-cormorant text-3xl text-gray-800 mb-4">Em breve</h2>
                             <p className="font-raleway text-gray-600 mb-8">
                                 Estamos preparando artigos incríveis para você. Volte em breve!
                             </p>

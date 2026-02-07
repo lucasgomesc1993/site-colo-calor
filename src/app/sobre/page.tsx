@@ -32,7 +32,7 @@ export default function AboutPage() {
                             <div className="relative aspect-[3/4] rounded-none overflow-hidden shadow-2xl border-4 border-white max-w-sm mx-auto">
                                 {/* Placeholder for now, assume generic consultant image or specific one if available */}
                                 <Image
-                                    src="/images/camila.jpeg"
+                                    src="/images/camila.webp"
                                     alt="Camila Toniatti"
                                     fill
                                     className="object-cover"
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <Section className="relative text-white overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/fundo.jpeg"
+                        src="/images/fundo.webp"
                         alt="Fundo decorativo"
                         fill
                         className="object-cover"
@@ -190,7 +190,7 @@ export default function AboutPage() {
                         </div>
                         <div className="order-1 md:order-2 relative h-[400px] rounded-none overflow-hidden shadow-xl border-4 border-white">
                             <Image
-                                src="/images/acredito.jpg"
+                                src="/images/acredito.webp"
                                 alt="Mãe e bebê"
                                 fill
                                 className="object-cover"

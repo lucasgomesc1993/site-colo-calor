@@ -66,7 +66,7 @@ export default function ServicesPage() {
                     "Insegurança nas primeiras mamadas",
                     "Uso de bicos artificiais"
                 ]}
-                imageSrc="/images/service_consultancy.png"
+                imageSrc="/images/service_consultancy.webp"
                 imageAlt="Consultora orientando mãe na amamentação"
                 ctaLabel="Agendar Consultoria Presencial"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Consultoria%20Presencial."
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                     "Lacerações do parto normal",
                     "Processos inflamatórios"
                 ]}
-                imageSrc="/images/service_laser.png"
+                imageSrc="/images/service_laser.webp"
                 imageAlt="Aplicação de laserterapia para conforto na amamentação"
                 ctaLabel="Agendar Laserterapia"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Laserterapia."
@@ -151,7 +151,7 @@ export default function ServicesPage() {
                     "Medo da dor ou de não conseguir",
                     "Desejo de viver uma amamentação leve"
                 ]}
-                imageSrc="/images/service_pregnancy.png"
+                imageSrc="/images/service_pregnancy.webp"
                 imageAlt="Gestante se preparando para amamentação"
                 ctaLabel="Saber mais sobre Preparação"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Prepara%C3%A7%C3%A3o%20na%20Gesta%C3%A7%C3%A3o."
@@ -184,7 +184,7 @@ export default function ServicesPage() {
                     "Retorno ao trabalho",
                     "Limites físicos ou emocionais"
                 ]}
-                imageSrc="/images/service_weaning.png"
+                imageSrc="/images/service_weaning.webp"
                 imageAlt="Mãe e filho em momento de conexão e afeto"
                 ctaLabel="Orientação Desmame Gentil"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20com%20o%20Desmame%20Gentil."
@@ -216,7 +216,7 @@ export default function ServicesPage() {
                     "Medo de redução da produção",
                     "Organização da nova rotina"
                 ]}
-                imageSrc="/images/service_work.png"
+                imageSrc="/images/service_work.webp"
                 imageAlt="Mãe organizada para retorno ao trabalho"
                 ctaLabel="Planejar Retorno ao Trabalho"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20meu%20Retorno%20ao%20Trabalho%20mantendo%20a%20amamenta%C3%A7%C3%A3o."

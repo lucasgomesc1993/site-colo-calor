@@ -46,6 +46,7 @@ export default function Home() {
             fill
             className="object-cover object-center"
             priority
+            fetchPriority="high"
           />
         </div>
 
@@ -201,6 +202,7 @@ export default function Home() {
             fill
             className="object-cover"
             priority={false}
+            sizes="100vw"
           />
         </div>
         <Container className="relative z-10">
@@ -289,13 +291,13 @@ export default function Home() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">
                   <div className="mb-4 text-[#9D5951]"><Heart size={28} /></div>
-                  <h4 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Bem Gestar</h4>
+                  <h3 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Bem Gestar</h3>
                   <p className="font-raleway text-sm text-[#8E7878] mb-4">Idealizadora do Bem Gestar — evento preparatório para gestantes, em sua 7ª edição.</p>
                   <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="text-[#9D5951] text-sm font-semibold hover:underline">Conhecer o Bem Gestar</a>
                 </div>
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">
                   <div className="mb-4 text-[#9D5951]"><BookOpen size={28} /></div>
-                  <h4 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Livro</h4>
+                  <h3 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Livro</h3>
                   <p className="font-raleway text-sm text-[#8E7878] mb-4">Coautora do livro Conhe’Ser Você na Maternidade.</p>
                   <a href="https://www.amazon.com.br/ConheSer-Voc%C3%AA-Maternidade-Vol-02/dp/6525176778" target="_blank" rel="noopener noreferrer" className="text-[#9D5951] text-sm font-semibold hover:underline">Conhecer o livro</a>
                 </div>

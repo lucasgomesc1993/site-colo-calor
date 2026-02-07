@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "browserslist": [
+    "defaults",
+    "not ie <= 11"
+  ],
   "dependencies": {
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
