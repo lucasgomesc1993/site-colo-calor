@@ -77,7 +77,7 @@ export function ServiceDetail({
                         <div className="grid sm:grid-cols-2 gap-8 mb-10">
                             {benefits.length > 0 && (
                                 <div>
-                                    <h4 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Benefícios</h4>
+                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Benefícios</h3>
                                     <ul className="space-y-2">
                                         {benefits.map((benefit, index) => (
                                             <li key={index} className="flex items-start gap-2 text-sm text-gray-600 font-raleway">
@@ -91,7 +91,7 @@ export function ServiceDetail({
 
                             {indications.length > 0 && (
                                 <div>
-                                    <h4 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Indicações</h4>
+                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Indicações</h3>
                                     <ul className="space-y-2">
                                         {indications.map((indication, index) => (
                                             <li key={index} className="flex items-start gap-2 text-sm text-gray-600 font-raleway">

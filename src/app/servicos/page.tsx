@@ -128,7 +128,7 @@ export default function ServicesPage() {
                     <p className="mt-4 italic text-terracotta">Preparar-se é um ato de autocuidado e proteção da sua amamentação.</p>
 
                     <div className="mt-6">
-                        <h4 className="font-bold text-terracotta mb-2">O que é trabalhado:</h4>
+                        <h3 className="font-bold text-terracotta mb-2">O que é trabalhado:</h3>
                         <ul className="list-disc pl-5 space-y-1 text-sm text-gray-600">
                             <li>Fisiologia da amamentação</li>
                             <li>Golden Hour e primeiras mamadas</li>
