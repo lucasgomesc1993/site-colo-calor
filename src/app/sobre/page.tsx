@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
@@ -132,7 +133,7 @@ export default function AboutPage() {
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 Idealizadora do Bem Gestar - Seu Guia, Seu Momento: O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua 9ª edição, preparando mães e pais para o momento mais importante de suas vidas.
                             </p>
-                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Bem Gestar →
                             </a>
                         </div>
@@ -146,7 +147,7 @@ export default function AboutPage() {
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 Livro Conhe'Ser Você na Maternidade: Onde compartilho minha experiência pessoal, aliada a informações técnicas e práticas essenciais sobre amamentação.
                             </p>
-                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <a href="https://www.amazon.com.br/ConheSer-Voc%C3%AA-Maternidade-Vol-02/dp/6525176778" target="_blank" rel="noopener noreferrer" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o livro →
                             </a>
                         </div>
@@ -160,9 +161,9 @@ export default function AboutPage() {
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 8 Passos para uma Amamentação de Sucesso: A metodologia exclusiva que estrutura todo o meu atendimento para garantir resultados reais.
                             </p>
-                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <Link href="/metodo" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Método →
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </Container>
