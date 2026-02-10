@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Colo & Calor - Amamentação com Acolhimento e Segurança
 
-## Getting Started
+Este é o site institucional da **Colo & Calor**, uma consultoria especializada em amamentação e laserterapia liderada por **Camila Toniatti** em São Paulo. O projeto foi desenvolvido com foco em uma experiência de usuário premium, acolhedora e informativa.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O projeto utiliza as ferramentas mais modernas do ecossistema Web:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Biblioteca UI:** [React 19](https://react.dev/)
+- **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+- **Ícones:** [Lucide React](https://lucide.dev/) e [React Icons](https://react-icons.github.io/react-icons/)
+- **SEO & Performance:** Otimização de imagens com [Sharp](https://sharp.pixelplumbing.com/) e metadados dinâmicos para SEO avançado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Sistema de Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O design foi concebido para transmitir calma, segurança e profissionalismo, utilizando uma paleta de cores terrosas e tipografia elegante.
 
-## Learn More
+- **Cores principais:** 
+  - Terracotta (`#ad665d`)
+  - Bege (`#E7D0BC`)
+  - Creme (`#F7EBE0`)
+- **Tipografia:** 
+  - *Cormorant Garamond* (Títulos)
+  - *Raleway* (Corpo de texto)
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Gerenciamento de rotas e páginas.
+- `src/components`: Componentes de UI, Layout e SEO reutilizáveis.
+- `src/lib`: Lógica de dados do blog e utilitários.
+- `public`: Assets estáticos, logos e imagens otimizadas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Como Executar
 
-## Deploy on Vercel
+Para rodar o projeto localmente, siga os passos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+3. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+---
+
+## 👨‍💻 Desenvolvedor
+
+Este projeto foi desenvolvido e mantido por **Lucas Gomes**.
+
+Se você deseja entrar em contato para novos projetos ou suporte técnico, utilize os canais abaixo:
+
+- **Instagram:** [@lucasgomesc_](https://www.instagram.com/lucasgomesc_/)
+- **WhatsApp:** [+55 11 94255-2058](https://wa.me/5511942552058)
+
+---
+© 2026 Colo & Calor. Todos os direitos reservados.
