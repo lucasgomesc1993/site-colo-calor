@@ -19,7 +19,7 @@ export function Footer() {
                     {/* Column 1: Logo & Bio */}
                     <div className="space-y-6">
                         <Link href="/" className="inline-block transition-transform hover:scale-105 duration-300">
-                            <div className="relative h-[52px] w-[160px]">
+                            <div className="relative h-[45px] w-[138px]">
                                 <Image
                                     src="/images/logo-branco-2.webp"
                                     alt="Colo & Calor Logo"

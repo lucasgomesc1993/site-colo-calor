@@ -41,14 +41,14 @@ export function Header() {
             <Container>
                 <div className="flex items-center justify-between">
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="relative h-[52px] w-[166px] md:h-[62px] md:w-[208px]">
+                        <div className="relative h-[45px] w-[144px] md:h-[54px] md:w-[181px]">
                             <Image
                                 src="/images/logo-branco-2.webp"
                                 alt="Colo & Calor Logo"
                                 fill
                                 className="object-contain"
                                 priority
-                                sizes="(max-width: 768px) 166px, 208px"
+                                sizes="(max-width: 768px) 144px, 181px"
                             />
                         </div>
                     </Link>

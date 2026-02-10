@@ -242,7 +242,7 @@ export default function Home() {
               icon={<Stethoscope size={24} />}
               title="Consultoria na Maternidade"
               description="Apoio especializado ainda na maternidade para garantir o melhor início da amamentação."
-              href="/servicos"
+              href="/servicos#maternidade"
             />
             <ServiceCard
               icon={<Briefcase size={24} />}
