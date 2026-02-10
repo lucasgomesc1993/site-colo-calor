@@ -197,7 +197,7 @@ export default function ServicesPage() {
                     <p className="mb-4">A laserterapia é um recurso terapêutico seguro, indolor e altamente eficaz, amplamente utilizado como complemento nas consultorias em amamentação.</p>
                     <p className="mb-4"><strong>Como a laserterapia atua (mecanismo de ação):</strong><br />
                         O laser atua diretamente nas células, estimulando a regeneração celular, aumentando a circulação sanguínea e modulando o processo inflamatório. Isso favorece a cicatrização dos tecidos lesionados e proporciona alívio da dor de forma natural e segura.</p>
-                    <div className="bg-white p-4 rounded-none border-l-4 border-terracotta my-6">
+                    <div className="bg-cream/50 p-4 rounded-none border-l-4 border-terracotta my-6">
                         <p className="text-sm italic text-gray-600">A dor e os machucados nas mamas estão entre as principais causas de desmame precoce. A laserterapia, associada à correção da pega, é uma grande aliada para preservar a amamentação.</p>
                     </div>
                 </>}
@@ -236,7 +236,40 @@ export default function ServicesPage() {
                 ]}
             />
 
-            {/* 6. Retorno ao Trabalho */}
+            {/* 6. Consultoria na Maternidade */}
+            <ServiceDetail
+                id="maternidade"
+                title="Consultoria na Maternidade"
+                subtitle="Consultoria na Maternidade"
+                description={<>
+                    <p>Esse serviço é voltado para mães que querem começar a amamentação com o pé direito, com orientações durante a Golden Hour e no primeiro contato com o bebê.</p>
+                </>}
+                benefitsTitle="Inclui:"
+                benefits={[
+                    "Visita presencial na maternidade",
+                    "Apoio prático nas primeiras mamadas",
+                    "Técnicas de pega correta e posicionamento",
+                    "Acompanhamento por WhatsApp por 15 dias"
+                ]}
+                imageSrc="/images/presencial-home.webp"
+                imageAlt="Consultoria em amamentação na maternidade"
+                ctaLabel="Quero consultoria na maternidade"
+                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Consultoria%20na%20Maternidade."
+                target="_blank"
+                rel="noopener noreferrer"
+                reversed={true}
+                bgVariant="beige"
+                locations={[
+                    "São Paulo",
+                    "ABC Paulista",
+                    "Alto do Tietê",
+                    "Guarulhos",
+                    "Vale do Ribeira",
+                    "Vale do Paraíba"
+                ]}
+            />
+
+            {/* 7. Retorno ao Trabalho */}
             <ServiceDetail
                 id="trabalho"
                 title="Retorno ao Trabalho e Amamentação"
@@ -261,11 +294,11 @@ export default function ServicesPage() {
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20apoio%20para%20o%20Retorno%20ao%20Trabalho."
                 target="_blank"
                 rel="noopener noreferrer"
-                reversed={true}
-                bgVariant="beige"
+                reversed={false}
+                bgVariant="white"
             />
 
-            {/* 7. Desmame Gentil */}
+            {/* 8. Desmame Gentil */}
             <ServiceDetail
                 id="desmame"
                 title="Desmame Gentil"
@@ -295,8 +328,8 @@ export default function ServicesPage() {
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20com%20o%20Desmame%20Gentil."
                 target="_blank"
                 rel="noopener noreferrer"
-                reversed={false}
-                bgVariant="white"
+                reversed={true}
+                bgVariant="beige"
             />
 
             {/* Closing CTA */}
