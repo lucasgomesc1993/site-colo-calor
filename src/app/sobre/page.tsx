@@ -130,7 +130,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Bem Gestar</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
-                                Idealizadora do Bem Gestar - Seu Guia, Seu Momento: O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua 7ª edição, preparando mães e pais para o momento mais importante de suas vidas.
+                                Idealizadora do Bem Gestar - Seu Guia, Seu Momento: O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua 9ª edição, preparando mães e pais para o momento mais importante de suas vidas.
                             </p>
                             <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Bem Gestar →

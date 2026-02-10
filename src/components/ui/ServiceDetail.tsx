@@ -9,7 +9,9 @@ interface ServiceDetailProps {
     subtitle?: string;
     description: React.ReactNode;
     benefits?: string[];
+    benefitsTitle?: string;
     indications?: string[];
+    indicationsTitle?: string;
     imageSrc: string;
     imageAlt: string;
     ctaLabel?: string;
@@ -19,6 +21,7 @@ interface ServiceDetailProps {
     reversed?: boolean;
     bgVariant?: 'white' | 'beige';
     id?: string;
+    locations?: string[];
 }
 
 export function ServiceDetail({
@@ -26,7 +29,9 @@ export function ServiceDetail({
     subtitle,
     description,
     benefits = [],
+    benefitsTitle = "Benefícios",
     indications = [],
+    indicationsTitle = "Indicações",
     imageSrc,
     imageAlt,
     ctaLabel = "Agendar Consultoria",
@@ -35,14 +40,15 @@ export function ServiceDetail({
     rel,
     reversed = false,
     bgVariant,
-    id
+    id,
+    locations = []
 }: ServiceDetailProps) {
     const bgColor = bgVariant
         ? (bgVariant === 'white' ? 'bg-white' : 'bg-cream')
         : (reversed ? 'bg-white' : 'bg-cream');
 
     return (
-        <section id={id} className={`py-16 md:py-24 ${bgColor}`}>
+        <section id={id} className={`py-16 md:py-24 scroll-mt-20 md:scroll-mt-24 ${bgColor}`}>
             <Container>
                 <div className={`flex flex-col md:flex-row gap-12 md:gap-20 items-center ${reversed ? 'md:flex-row-reverse' : ''}`}>
 
@@ -77,7 +83,7 @@ export function ServiceDetail({
                         <div className="grid sm:grid-cols-2 gap-8 mb-10">
                             {benefits.length > 0 && (
                                 <div>
-                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Benefícios</h3>
+                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">{benefitsTitle}</h3>
                                     <ul className="space-y-2">
                                         {benefits.map((benefit, index) => (
                                             <li key={index} className="flex items-start gap-2 text-sm text-gray-600 font-raleway">
@@ -91,7 +97,7 @@ export function ServiceDetail({
 
                             {indications.length > 0 && (
                                 <div>
-                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">Indicações</h3>
+                                    <h3 className="font-cormorant text-xl text-terracotta font-bold mb-4 border-b border-terracotta/20 pb-2">{indicationsTitle}</h3>
                                     <ul className="space-y-2">
                                         {indications.map((indication, index) => (
                                             <li key={index} className="flex items-start gap-2 text-sm text-gray-600 font-raleway">
@@ -107,6 +113,18 @@ export function ServiceDetail({
                         <Button href={ctaLink} size="lg" target={target} rel={rel}>
                             {ctaLabel}
                         </Button>
+
+                        {locations.length > 0 && (
+                            <div className="mt-8">
+                                <div className="flex flex-wrap gap-2">
+                                    {locations.map((city, index) => (
+                                        <span key={index} className="px-3 py-1 bg-white border border-terracotta/20 text-terracotta text-xs font-medium">
+                                            {city}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                 </div>

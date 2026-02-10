@@ -40,10 +40,10 @@ export default function ServicesPage() {
                 </Container>
             </section>
 
-            {/* 1. Consultoria em Amamentação */}
+            {/* 1. Consultoria Presencial */}
             <ServiceDetail
                 id="consultoria"
-                title="Consultoria em Amamentação"
+                title="Consultoria Presencial em Amamentação"
                 subtitle="Consultoria em Amamentação"
                 description={<>
                     <p>A consultoria em amamentação é indicada sempre que a amamentação não está fluindo com conforto, segurança ou prazer. Dor, insegurança e dúvidas não são sinais de fraqueza — são sinais de que você precisa de orientação especializada.</p>
@@ -74,43 +74,44 @@ export default function ServicesPage() {
                 rel="noopener noreferrer"
                 reversed={false}
                 bgVariant="white"
+                locations={[
+                    "São Paulo",
+                    "ABC Paulista",
+                    "Alto do Tietê",
+                    "Vale do Ribeira",
+                    "Vale do Paraíba",
+                    "Guarulhos"
+                ]}
             />
 
-            {/* 2. Laserterapia */}
+            {/* 2. Consultoria Online */}
             <ServiceDetail
-                id="laserterapia"
-                title="Laserterapia na Amamentação"
-                subtitle="Laserterapia na Amamentação"
+                id="online"
+                title="Consultoria Online em Amamentação"
+                subtitle="Consultoria Online em Amamentação"
                 description={<>
-                    <strong className="block text-xl mb-4 text-terracotta/90">Um grande aliado contra dor, fissuras e inflamações</strong>
-                    <p className="mb-4">A laserterapia é um recurso terapêutico seguro, indolor e altamente eficaz, amplamente utilizado como complemento nas consultorias em amamentação.</p>
-                    <p className="mb-4"><strong>Como a laserterapia atua (mecanismo de ação):</strong><br />
-                        O laser atua diretamente nas células, estimulando a regeneração celular, aumentando a circulação sanguínea e modulando o processo inflamatório. Isso favorece a cicatrização dos tecidos lesionados e proporciona alívio da dor de forma natural e segura.</p>
-                    <div className="bg-white p-4 rounded-none border-l-4 border-terracotta my-6">
-                        <p className="text-sm italic text-gray-600">👉 A dor e os machucados nas mamas estão entre as principais causas de desmame precoce. A laserterapia, associada à correção da pega, é uma grande aliada para preservar a amamentação.</p>
-                    </div>
+                    <p>A consultoria em amamentação online é uma opção segura e eficaz para quem busca orientação profissional em amamentação, correção de pega e posicionamento, mesmo à distância.</p>
                 </>}
+                benefitsTitle="O que você recebe:"
                 benefits={[
-                    "Alívio rápido da dor",
-                    "Aceleração da cicatrização",
-                    "Redução da inflamação e do inchaço",
-                    "Estímulo à regeneração dos tecidos",
-                    "Melhora da vascularização local",
-                    "Conforto desde as primeiras aplicações"
+                    "Consulta de 1h30 via chamada de vídeo",
+                    "Avaliação técnica de pega e mamada",
+                    "Estratégias para reduzir dor e melhorar a amamentação",
+                    "Apoio e ajustes via WhatsApp por 15 dias"
                 ]}
+                indicationsTitle="Indicações:"
                 indications={[
-                    "Fissuras mamárias",
-                    "Dor persistente ao amamentar",
-                    "Inflamações nos mamilos",
-                    "Assaduras em bebês",
-                    "Dor na incisão da cesárea",
-                    "Lacerações do parto normal",
-                    "Processos inflamatórios"
+                    "Dor ao amamentar",
+                    "Uso de bicos artificiais",
+                    "Mães com dificuldade para manter técnica correta",
+                    "Dúvidas sobre produção de leite",
+                    "Ajustes pós-parto",
+                    "Mães em cidades não atendidas pela Consultora"
                 ]}
-                imageSrc="/images/service_laser.webp"
-                imageAlt="Aplicação de laserterapia para conforto na amamentação"
-                ctaLabel="Agendar Laserterapia"
-                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Laserterapia."
+                imageSrc="/images/atendimento-online.webp"
+                imageAlt="Atendimento de consultoria online via videochamada"
+                ctaLabel="Agendar Consultoria Online"
+                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20Consultoria%20Online."
                 target="_blank"
                 rel="noopener noreferrer"
                 reversed={true}
@@ -161,7 +162,110 @@ export default function ServicesPage() {
                 bgVariant="white"
             />
 
-            {/* 4. Desmame Gentil */}
+            {/* 4. Avaliação por Vídeo */}
+            <ServiceDetail
+                id="video"
+                title="Avaliação da mamada por vídeo"
+                subtitle="Avaliação da mamada por vídeo"
+                description={<>
+                    <p>Envie um vídeo da mamada e receba análise técnica com foco em pega correta, posicionamento e ajuste de amamentação.</p>
+                    <p>Ideal para mães que querem apoio rápido e direcionado, com acompanhamento por WhatsApp por 15 dias.</p>
+                </>}
+                indicationsTitle="Indicado para:"
+                indications={[
+                    "Mães que já deram início à amamentação",
+                    "Ajustes pontuais de pega e técnica",
+                    "Orientação prática sem consulta ao vivo"
+                ]}
+                imageSrc="/images/online-home.webp"
+                imageAlt="Mãe avaliando mamada com apoio de vídeo"
+                ctaLabel="Enviar meu vídeo da mamada"
+                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20uma%20Avalia%C3%A7%C3%A3o%20da%20mamada%20por%20v%C3%ADdeo."
+                target="_blank"
+                rel="noopener noreferrer"
+                reversed={true}
+                bgVariant="beige"
+            />
+
+            {/* 5. Laserterapia */}
+            <ServiceDetail
+                id="laserterapia"
+                title="Laserterapia na Amamentação"
+                subtitle="Laserterapia na Amamentação"
+                description={<>
+                    <strong className="block text-xl mb-4 text-terracotta/90">Um grande aliado contra dor, fissuras e inflamações</strong>
+                    <p className="mb-4">A laserterapia é um recurso terapêutico seguro, indolor e altamente eficaz, amplamente utilizado como complemento nas consultorias em amamentação.</p>
+                    <p className="mb-4"><strong>Como a laserterapia atua (mecanismo de ação):</strong><br />
+                        O laser atua diretamente nas células, estimulando a regeneração celular, aumentando a circulação sanguínea e modulando o processo inflamatório. Isso favorece a cicatrização dos tecidos lesionados e proporciona alívio da dor de forma natural e segura.</p>
+                    <div className="bg-white p-4 rounded-none border-l-4 border-terracotta my-6">
+                        <p className="text-sm italic text-gray-600">A dor e os machucados nas mamas estão entre as principais causas de desmame precoce. A laserterapia, associada à correção da pega, é uma grande aliada para preservar a amamentação.</p>
+                    </div>
+                </>}
+                benefits={[
+                    "Alívio rápido da dor",
+                    "Aceleração da cicatrização",
+                    "Redução da inflamação e do inchaço",
+                    "Estímulo à regeneração dos tecidos",
+                    "Melhora da vascularização local",
+                    "Conforto desde as primeiras aplicações"
+                ]}
+                indications={[
+                    "Fissuras mamárias",
+                    "Dor persistente ao amamentar",
+                    "Inflamações nos mamilos",
+                    "Assaduras em bebês",
+                    "Dor na incisão da cesárea",
+                    "Lacerações do parto normal",
+                    "Processos inflamatórios"
+                ]}
+                imageSrc="/images/service_laser.webp"
+                imageAlt="Aplicação de laserterapia para conforto na amamentação"
+                ctaLabel="Agendar Laserterapia"
+                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Laserterapia."
+                target="_blank"
+                rel="noopener noreferrer"
+                reversed={false}
+                bgVariant="white"
+                locations={[
+                    "São Paulo",
+                    "ABC Paulista",
+                    "Alto do Tietê",
+                    "Vale do Ribeira",
+                    "Vale do Paraíba",
+                    "Guarulhos"
+                ]}
+            />
+
+            {/* 6. Retorno ao Trabalho */}
+            <ServiceDetail
+                id="trabalho"
+                title="Retorno ao Trabalho e Amamentação"
+                subtitle="Retorno ao Trabalho e Amamentação"
+                description={<>
+                    <strong className="block text-xl mb-4 text-terracotta/90">Retornar ao trabalho não precisa significar fim da amamentação.</strong>
+                    <p>Este serviço oferece orientação estratégica e apoio por 40 dias para manter a produção de leite em alta, amamentação exclusiva, adaptação de horários, ordenhas, rotinas, treinamento do bebê e do cuidador, este quando aplicável, e tudo isso sem a utilização de bicos artificiais.</p>
+                    <div className="bg-cream/50 p-4 rounded-none border-l-4 border-terracotta my-6">
+                        <p className="text-sm italic text-gray-700">O ideal é que esse planejamento inicie 30 dias antes do retorno efetivo da mãe.</p>
+                    </div>
+                </>}
+                benefitsTitle="Inclui:"
+                benefits={[
+                    "Dicas práticas de ordenha e armazenamento do leite",
+                    "Organização de rotina materna e profissional",
+                    "Técnicas para treinar bebê e cuidador(a)",
+                    "Apoio contínuo via WhatsApp por 40 dias a partir da contratação."
+                ]}
+                imageSrc="/images/service_work.webp"
+                imageAlt="Mãe organizada para retorno ao trabalho"
+                ctaLabel="Quero apoio para o Retorno ao Trabalho"
+                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20apoio%20para%20o%20Retorno%20ao%20Trabalho."
+                target="_blank"
+                rel="noopener noreferrer"
+                reversed={true}
+                bgVariant="beige"
+            />
+
+            {/* 7. Desmame Gentil */}
             <ServiceDetail
                 id="desmame"
                 title="Desmame Gentil"
@@ -180,6 +284,7 @@ export default function ServicesPage() {
                 ]}
                 indications={[
                     "Desejo de encerrar a amamentação",
+                    "Desmame parcial (diurno ou noturno)",
                     "Mudanças na rotina familiar",
                     "Retorno ao trabalho",
                     "Limites físicos ou emocionais"
@@ -188,38 +293,6 @@ export default function ServicesPage() {
                 imageAlt="Mãe e filho em momento de conexão e afeto"
                 ctaLabel="Orientação Desmame Gentil"
                 ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20com%20o%20Desmame%20Gentil."
-                target="_blank"
-                rel="noopener noreferrer"
-                reversed={true}
-                bgVariant="beige"
-            />
-
-            {/* 5. Retorno ao Trabalho */}
-            <ServiceDetail
-                id="trabalho"
-                title="Retorno ao Trabalho e Amamentação"
-                subtitle="Retorno ao Trabalho e Amamentação"
-                description={<>
-                    <strong className="block text-xl mb-4 text-terracotta/90">É possível continuar amamentando</strong>
-                    <p className="mb-4">Voltar ao trabalho não precisa significar o fim da amamentação. Com orientação correta, é possível manter a produção de leite e adaptar a rotina de forma saudável e realista.</p>
-                    <p>O acompanhamento inclui orientações sobre ordenha, armazenamento do leite materno e adaptação da rotina, com suporte contínuo por WhatsApp.</p>
-                </>}
-                benefits={[
-                    "Manutenção da amamentação",
-                    "Mais segurança e organização",
-                    "Menos ansiedade na transição",
-                    "Orientações práticas e personalizadas"
-                ]}
-                indications={[
-                    "Mães que estão retornando ao trabalho",
-                    "Dúvidas sobre ordenha e armazenamento",
-                    "Medo de redução da produção",
-                    "Organização da nova rotina"
-                ]}
-                imageSrc="/images/service_work.webp"
-                imageAlt="Mãe organizada para retorno ao trabalho"
-                ctaLabel="Planejar Retorno ao Trabalho"
-                ctaLink="https://wa.me/5511999494829?text=Ol%C3%A1!%20Gostaria%20de%20planejar%20meu%20Retorno%20ao%20Trabalho%20mantendo%20a%20amamenta%C3%A7%C3%A3o."
                 target="_blank"
                 rel="noopener noreferrer"
                 reversed={false}

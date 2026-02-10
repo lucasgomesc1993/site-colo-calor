@@ -180,7 +180,7 @@ export default function Home() {
               description="Para mães que precisam de apoio prático, correção de pega e cuidados diretos com a mama."
               features={["São Paulo", "ABC Paulista", "Alto do Tietê", "Vale do Ribeira", "Vale do Paraíba"]}
               actionLabel="Quero agendar a Consultoria Presencial"
-              href="/servicos"
+              href="/servicos#consultoria"
               backgroundImage="/images/presencial-home.webp"
             />
             <ModalityCard
@@ -188,7 +188,7 @@ export default function Home() {
               title="Atendimento Online"
               description="Orientação profissional, segura e eficaz, onde você estiver."
               actionLabel="Quero agendar a Consultoria Online"
-              href="/servicos"
+              href="/servicos#online"
               isPrimary
               backgroundImage="/images/online-home.webp"
               features={["Suporte especializado via videochamada."]}
@@ -224,19 +224,19 @@ export default function Home() {
               icon={<Baby size={24} />}
               title="Preparação na Gestação"
               description="Comece certo! Aprenda tudo sobre amamentação antes do bebê nascer."
-              href="/servicos"
+              href="/servicos#gestacao"
             />
             <ServiceCard
               icon={<PlayCircle size={24} />}
               title="Avaliação da mamada por vídeo"
               description="Análise detalhada da mamada através de vídeos gravados para identificar correções na pega."
-              href="/servicos"
+              href="/servicos#video"
             />
             <ServiceCard
               icon={<Zap size={24} />}
               title="Laserterapia"
               description="Tecnologia avançada para cicatrização rápida de fissuras e alívio da dor."
-              href="/servicos"
+              href="/servicos#laserterapia"
             />
             <ServiceCard
               icon={<Stethoscope size={24} />}
@@ -247,14 +247,14 @@ export default function Home() {
             <ServiceCard
               icon={<Briefcase size={24} />}
               title="Retorno ao Trabalho"
-              description="Planejamento personalizado para manter a amamentação no retorno ao trabalho."
-              href="/servicos"
+              description="Como manter a amamentação (exclusiva ou mista) após voltar ao trabalho, sem bicos."
+              href="/servicos#trabalho"
             />
             <ServiceCard
               icon={<LogOut size={24} />}
               title="Desmame Gentil"
               description="Planejamento e acompanhamento para encerrar a amamentação com respeito e amor."
-              href="/servicos"
+              href="/servicos#desmame"
             />
           </div>
 
@@ -296,7 +296,7 @@ export default function Home() {
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">
                   <div className="mb-4 text-terracotta"><Heart size={28} /></div>
                   <h3 className="font-cormorant text-xl font-bold text-terracotta mb-2">Bem Gestar</h3>
-                  <p className="font-raleway text-sm text-[#8E7878] mb-4">Idealizadora do Bem Gestar — evento preparatório para gestantes, em sua 7ª edição.</p>
+                  <p className="font-raleway text-sm text-[#8E7878] mb-4">Idealizadora do Bem Gestar — evento preparatório para gestantes, em sua 9ª edição.</p>
                   <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="text-terracotta text-sm font-semibold hover:underline">Conhecer o Bem Gestar</a>
                 </div>
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">

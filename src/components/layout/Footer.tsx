@@ -98,7 +98,13 @@ export function Footer() {
                                 </span>
                                 <div>
                                     <p className="font-semibold text-white mb-1">Atendimento Presencial:</p>
-                                    <p className="leading-relaxed">São Paulo, ABC e Vales.</p>
+                                    <ul className="leading-relaxed space-y-1">
+                                        <li>São Paulo</li>
+                                        <li>ABC Paulista</li>
+                                        <li>Alto do Tietê</li>
+                                        <li>Vale do Ribeira</li>
+                                        <li>Vale do Paraíba</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
