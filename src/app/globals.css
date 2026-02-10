@@ -1,7 +1,8 @@
 @import "tailwindcss";
+/* Forced rebuild */
 
 @theme {
-  --color-terracotta: #9D5951;
+  --color-terracotta: #ad665d;
   --color-beige: #E7D0BC;
   --color-cream: #F7EBE0;
 

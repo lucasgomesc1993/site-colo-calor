@@ -14,11 +14,12 @@ import {
   Calendar,
   MapPin,
   Video,
-  Home as HomeIcon,
   PlayCircle,
   Zap,
   BookOpen,
   LogOut,
+  Briefcase,
+  Stethoscope,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -35,13 +36,13 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       <ProfessionalServiceSchema />
       {/* Hero Section */}
-      <Section className="relative bg-[#9D5951] pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center">
+      <Section className="relative bg-terracotta pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           {/* Dark gradient overlay - solid left, fading to right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#9D5951] via-[#9D5951]/90 via-60% to-transparent z-10 w-full" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#9D5951]/40 to-transparent z-10 w-full h-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-terracotta via-terracotta/90 via-60% to-transparent z-10 w-full" />
+          <div className="absolute inset-0 bg-gradient-to-b from-terracotta/40 to-transparent z-10 w-full h-40" />
           <Image
-            src="/images/hero-emotional.webp"
+            src="/images/hero-emo.webp"
             alt="Mãe amamentando bebê"
             fill
             className="object-cover object-center"
@@ -61,7 +62,9 @@ export default function Home() {
             </h1>
 
             <p className="font-raleway text-lg md:text-xl text-[#FDFBF7]/90 mb-10 max-w-md leading-relaxed text-left">
-              Amamentar não precisa doer nem assustar. Você merece viver esse momento com apoio profissional, segurança e confiança.
+              A amamentação não precisa doer, confundir ou assustar.
+              <br />
+              Aqui você encontra acolhimento, informação segura e apoio profissional para viver esse momento com leveza, confiança e conexão com seu bebê.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -70,7 +73,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"
-                className="w-full sm:w-auto !bg-[#FDFBF7] hover:!bg-[#E7D0BC] !text-[#9D5951] font-bold shadow-sm rounded-none px-8 py-4 justify-center transition-all duration-300"
+                className="w-full sm:w-auto !bg-[#FDFBF7] hover:!bg-[#E7D0BC] !text-terracotta font-bold shadow-sm rounded-none px-8 py-4 justify-center transition-all duration-300"
               >
                 <FaWhatsapp className="w-5 h-5 mr-2" />
                 Preciso de ajuda agora
@@ -144,10 +147,10 @@ export default function Home() {
             </div>
             <div className="order-1 md:order-2">
               <h2 className="font-cormorant text-5xl text-terracotta mb-6 leading-tight">
-                Prepare-se para amamentar <span className="italic font-light">sem dor, medo ou insegurança</span>
+                Prepare-se para amamentar <span className="italic font-light">sem dor, medo ou insegurança, e... SEM COMPLEMENTO</span>
               </h2>
               <p className="font-raleway text-lg text-gray-700 leading-relaxed mb-8">
-                O <strong className="text-terracotta">Método Colo & Calor</strong> é um passo a passo prático e acolhedor para gestantes e mães que querem evitar ou resolver dificuldades na amamentação.
+                O <strong className="text-terracotta">Método Colo & Calor</strong> é um passo a passo prático e acolhedor para gestantes e mães que querem se preparar para a amamentação ou resolver dificuldades como dor, fissuras, pega incorreta e insegurança — antes ou depois do nascimento do bebê.
               </p>
               <Button href="/metodo">
                 Conhecer o Método Colo & Calor
@@ -162,7 +165,7 @@ export default function Home() {
         <Container>
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-terracotta uppercase tracking-widest text-sm font-semibold mb-2 block">
-              Para gestantes e mães em qualquer fase
+              Para gestantes e mães em qualquer fase da amamentação
             </span>
             <h2 className="font-cormorant text-5xl text-terracotta mb-6">Como você prefere ser atendida?</h2>
             <p className="font-raleway text-gray-600">
@@ -175,8 +178,8 @@ export default function Home() {
               icon={<MapPin size={32} />}
               title="Atendimento Presencial"
               description="Para mães que precisam de apoio prático, correção de pega e cuidados diretos com a mama."
-              features={["São Paulo", "Guarulhos", "ABC", "Vales"]}
-              actionLabel="Ver atendimentos presenciais"
+              features={["São Paulo", "ABC Paulista", "Alto do Tietê", "Vale do Ribeira", "Vale do Paraíba"]}
+              actionLabel="Quero agendar a Consultoria Presencial"
               href="/servicos"
               backgroundImage="/images/presencial-home.webp"
             />
@@ -184,10 +187,11 @@ export default function Home() {
               icon={<Video size={32} />}
               title="Atendimento Online"
               description="Orientação profissional, segura e eficaz, onde você estiver."
-              actionLabel="Ver atendimentos online"
+              actionLabel="Quero agendar a Consultoria Online"
               href="/servicos"
               isPrimary
               backgroundImage="/images/online-home.webp"
+              features={["Suporte especializado via videochamada."]}
             />
           </div>
         </Container>
@@ -217,20 +221,14 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ServiceCard
-              icon={<HomeIcon size={24} />}
-              title="Consultoria Presencial"
-              description="Atendimento no conforto do seu lar (SP e região) para ajuste de pega e alívio da dor."
-              href="/servicos"
-            />
-            <ServiceCard
-              icon={<Video size={24} />}
-              title="Consultoria Online"
-              description="Orientação especializada via vídeo chamada para qualquer lugar do mundo."
+              icon={<Baby size={24} />}
+              title="Preparação na Gestação"
+              description="Comece certo! Aprenda tudo sobre amamentação antes do bebê nascer."
               href="/servicos"
             />
             <ServiceCard
               icon={<PlayCircle size={24} />}
-              title="Avaliação da Mamada por Vídeo"
+              title="Avaliação da mamada por vídeo"
               description="Análise detalhada da mamada através de vídeos gravados para identificar correções na pega."
               href="/servicos"
             />
@@ -241,9 +239,15 @@ export default function Home() {
               href="/servicos"
             />
             <ServiceCard
-              icon={<Baby size={24} />}
-              title="Preparação na Gestação"
-              description="Comece certo! Aprenda tudo sobre amamentação antes do bebê nascer."
+              icon={<Stethoscope size={24} />}
+              title="Consultoria na Maternidade"
+              description="Apoio especializado ainda na maternidade para garantir o melhor início da amamentação."
+              href="/servicos"
+            />
+            <ServiceCard
+              icon={<Briefcase size={24} />}
+              title="Retorno ao Trabalho"
+              description="Planejamento personalizado para manter a amamentação no retorno ao trabalho."
               href="/servicos"
             />
             <ServiceCard
@@ -255,7 +259,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button href="/servicos" className="!bg-[#E7D0BC] hover:!bg-[#D4B8A0] !text-[#9D5951] font-bold">Ver todos os serviços</Button>
+            <Button href="/servicos" className="!bg-[#E7D0BC] hover:!bg-[#D4B8A0] !text-terracotta font-bold">Ver todos os serviços</Button>
           </div>
         </Container>
       </Section>
@@ -290,16 +294,16 @@ export default function Home() {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">
-                  <div className="mb-4 text-[#9D5951]"><Heart size={28} /></div>
-                  <h3 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Bem Gestar</h3>
+                  <div className="mb-4 text-terracotta"><Heart size={28} /></div>
+                  <h3 className="font-cormorant text-xl font-bold text-terracotta mb-2">Bem Gestar</h3>
                   <p className="font-raleway text-sm text-[#8E7878] mb-4">Idealizadora do Bem Gestar — evento preparatório para gestantes, em sua 7ª edição.</p>
-                  <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="text-[#9D5951] text-sm font-semibold hover:underline">Conhecer o Bem Gestar</a>
+                  <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="text-terracotta text-sm font-semibold hover:underline">Conhecer o Bem Gestar</a>
                 </div>
                 <div className="bg-[#F9F4EF] p-6 rounded-none shadow-md border-none">
-                  <div className="mb-4 text-[#9D5951]"><BookOpen size={28} /></div>
-                  <h3 className="font-cormorant text-xl font-bold text-[#9D5951] mb-2">Livro</h3>
+                  <div className="mb-4 text-terracotta"><BookOpen size={28} /></div>
+                  <h3 className="font-cormorant text-xl font-bold text-terracotta mb-2">Livro</h3>
                   <p className="font-raleway text-sm text-[#8E7878] mb-4">Coautora do livro Conhe’Ser Você na Maternidade.</p>
-                  <a href="https://www.amazon.com.br/ConheSer-Voc%C3%AA-Maternidade-Vol-02/dp/6525176778" target="_blank" rel="noopener noreferrer" className="text-[#9D5951] text-sm font-semibold hover:underline">Conhecer o livro</a>
+                  <a href="https://www.amazon.com.br/ConheSer-Voc%C3%AA-Maternidade-Vol-02/dp/6525176778" target="_blank" rel="noopener noreferrer" className="text-terracotta text-sm font-semibold hover:underline">Conhecer o livro</a>
                 </div>
               </div>
             </div>
@@ -310,7 +314,7 @@ export default function Home() {
       {/* Home CTA Section */}
       <Section className="bg-white text-center py-24">
         <Container>
-          <h2 className="font-cormorant text-4xl md:text-5xl mb-6 leading-tight text-[#9D5951]">
+          <h2 className="font-cormorant text-4xl md:text-5xl mb-6 leading-tight text-terracotta">
             Você não precisa passar por esse momento <span className="italic">sozinha</span>.
           </h2>
           <p className="font-raleway text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
@@ -320,7 +324,7 @@ export default function Home() {
             href="https://wa.me/5511999494829"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#9D5951] hover:bg-[#7A3E3E] text-white border-none shadow-md transition-all duration-300 text-lg px-8 py-4 rounded-none font-medium"
+            className="bg-terracotta hover:bg-[#7A3E3E] text-white border-none shadow-md transition-all duration-300 text-lg px-8 py-4 rounded-none font-medium"
           >
             <FaWhatsapp className="w-5 h-5 mr-2" />
             Falar com a consultora no WhatsApp

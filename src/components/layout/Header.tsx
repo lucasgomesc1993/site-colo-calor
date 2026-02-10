@@ -36,7 +36,7 @@ export function Header() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 z-50 bg-[#9D5951] shadow-md py-3 transition-all duration-300"
+            className="fixed top-0 left-0 right-0 z-50 bg-terracotta shadow-md py-3 transition-all duration-300"
         >
             <Container>
                 <div className="flex items-center justify-between">
@@ -85,7 +85,7 @@ export function Header() {
                                 href="https://wa.me/5511999494829"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="!bg-[#FDFBF7] !text-[#9D5951] hover:!bg-[#E7D0BC] font-bold"
+                                className="!bg-[#FDFBF7] !text-terracotta hover:!bg-[#E7D0BC] font-bold"
                             >
                                 Agendar
                             </Button>
@@ -105,7 +105,7 @@ export function Header() {
 
             {/* Mobile Nav Overlay */}
             <div
-                className={`md:hidden fixed inset-0 z-[60] bg-[#9D5951] transition-all duration-500 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                className={`md:hidden fixed inset-0 z-[60] bg-terracotta transition-all duration-500 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
             >
                 {/* Close Button Inside Overlay */}
@@ -160,7 +160,7 @@ export function Header() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 size="lg"
-                                className="w-full !bg-[#FDFBF7] !text-[#9D5951] hover:!bg-[#E7D0BC] font-bold text-lg shadow-xl"
+                                className="w-full !bg-[#FDFBF7] !text-terracotta hover:!bg-[#E7D0BC] font-bold text-lg shadow-xl"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Agendar Consultoria

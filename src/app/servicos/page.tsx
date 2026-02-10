@@ -229,7 +229,7 @@ export default function ServicesPage() {
             {/* Closing CTA */}
             <Section className="bg-cream">
                 <Container>
-                    <div className="bg-[#9D5951] text-white p-8 md:p-12 text-center shadow-lg relative overflow-hidden group border border-white/5 max-w-4xl mx-auto">
+                    <div className="bg-terracotta text-white p-8 md:p-12 text-center shadow-lg relative overflow-hidden group border border-white/5 max-w-4xl mx-auto">
                         {/* Subtle decorative background elements */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
 

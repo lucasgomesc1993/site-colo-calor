@@ -36,7 +36,7 @@ export function ModalityCard({
                     />
                     {/* Overlay to ensure legibility - Gradient from top-left to bottom-right */}
                     <div className={`absolute inset-0 z-10 bg-gradient-to-br ${isPrimary
-                        ? 'from-[#9D5951]/95 via-[#9D5951]/85 to-[#9D5951]/50'
+                        ? 'from-terracotta/95 via-terracotta/85 to-terracotta/50'
                         : 'from-[#FDFBF7]/98 via-[#FDFBF7]/90 to-[#FDFBF7]/60'
                         }`} />
                 </div>
@@ -47,7 +47,7 @@ export function ModalityCard({
                     {icon}
                 </div>
                 <h3 className={`font-cormorant text-3xl font-bold mb-4 ${isPrimary ? 'text-white' : 'text-terracotta'}`}>{title}</h3>
-                <p className={`font-raleway mb-8 flex-grow ${isPrimary ? 'text-white/90' : 'text-terracotta/80'}`}>{description}</p>
+                <p className={`font-raleway mb-8 md:mb-3 ${isPrimary ? 'text-white/90' : 'text-terracotta/80'}`}>{description}</p>
 
                 {features.length > 0 && (
                     <div className="flex flex-wrap gap-2 mb-8">
@@ -62,7 +62,7 @@ export function ModalityCard({
                 <Button
                     href={href}
                     variant={isPrimary ? 'secondary' : 'primary'}
-                    className={`w-full ${isPrimary ? '!bg-white !text-terracotta hover:!bg-white/90' : ''}`}
+                    className={`mt-auto w-full !whitespace-nowrap !text-sm sm:!text-base !px-2 sm:!px-6 ${isPrimary ? '!bg-white !text-terracotta hover:!bg-white/90' : ''}`}
                 >
                     {actionLabel}
                 </Button>

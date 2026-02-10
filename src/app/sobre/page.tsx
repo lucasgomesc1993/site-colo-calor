@@ -42,10 +42,10 @@ export default function AboutPage() {
                         </div>
 
                         <div className="order-1 md:order-2">
-                            <div className="inline-block px-3 py-1 bg-[#9D5951]/10 rounded-none text-[#9D5951] text-sm font-semibold mb-4">
+                            <div className="inline-block px-3 py-1 bg-terracotta/10 rounded-none text-terracotta text-sm font-semibold mb-4">
                                 Conheça a especialista
                             </div>
-                            <h1 className="font-cormorant text-5xl md:text-6xl text-[#9D5951] mb-6 leading-tight">
+                            <h1 className="font-cormorant text-5xl md:text-6xl text-terracotta mb-6 leading-tight">
                                 Camila Toniatti
                             </h1>
                             <p className="font-raleway text-xl text-[#8E7878] leading-relaxed font-medium">
@@ -60,7 +60,7 @@ export default function AboutPage() {
             <Section className="bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center md:text-left">
-                        <h2 className="font-cormorant text-4xl md:text-5xl text-[#9D5951] mb-8 leading-tight text-center">
+                        <h2 className="font-cormorant text-4xl md:text-5xl text-terracotta mb-8 leading-tight text-center">
                             Do desafio ao propósito
                         </h2>
                         <div className="prose prose-lg max-w-none text-gray-600 font-raleway">
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
                             <div className="relative p-8 md:p-12 bg-[#F9F4EF] rounded-none my-12 text-center">
                                 <Quote className="absolute top-4 left-4 text-[#E7D0BC] opacity-50" size={40} />
-                                <p className="font-cormorant text-2xl md:text-3xl text-[#9D5951] italic leading-relaxed relative z-10">
+                                <p className="font-cormorant text-2xl md:text-3xl text-terracotta italic leading-relaxed relative z-10">
                                     "Percebi o quanto eu poderia mudar a trajetória e a experiência de centenas de famílias, transformando angústia em alívio, confiança e alegria."
                                 </p>
                             </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
             <Section className="bg-white">
                 <Container>
                     <div className="text-center mb-16">
-                        <h2 className="font-cormorant text-4xl md:text-5xl text-[#9D5951] mb-6">
+                        <h2 className="font-cormorant text-4xl md:text-5xl text-terracotta mb-6">
                             Minha dedicação à causa
                         </h2>
                         <p className="font-raleway text-lg text-[#8E7878]">
@@ -125,42 +125,42 @@ export default function AboutPage() {
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Card 1 */}
                         <div className="bg-[#F9F4EF] p-8 rounded-none shadow-md hover:shadow-lg transition-shadow border-none h-full flex flex-col">
-                            <div className="mb-6 text-[#9D5951]">
+                            <div className="mb-6 text-terracotta">
                                 <Heart size={32} />
                             </div>
-                            <h3 className="font-cormorant text-2xl font-bold text-[#9D5951] mb-4">Bem Gestar</h3>
+                            <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Bem Gestar</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 Idealizadora do Bem Gestar - Seu Guia, Seu Momento: O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua 7ª edição, preparando mães e pais para o momento mais importante de suas vidas.
                             </p>
-                            <a href="#" className="font-semibold text-[#9D5951] hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Bem Gestar →
                             </a>
                         </div>
 
                         {/* Card 2 */}
                         <div className="bg-[#F9F4EF] p-8 rounded-none shadow-md hover:shadow-lg transition-shadow border-none h-full flex flex-col">
-                            <div className="mb-6 text-[#9D5951]">
+                            <div className="mb-6 text-terracotta">
                                 <BookOpen size={32} />
                             </div>
-                            <h3 className="font-cormorant text-2xl font-bold text-[#9D5951] mb-4">Coautora</h3>
+                            <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Coautora</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 Livro Conhe'Ser Você na Maternidade: Onde compartilho minha experiência pessoal, aliada a informações técnicas e práticas essenciais sobre amamentação.
                             </p>
-                            <a href="#" className="font-semibold text-[#9D5951] hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o livro →
                             </a>
                         </div>
 
                         {/* Card 3 */}
                         <div className="bg-[#F9F4EF] p-8 rounded-none shadow-md hover:shadow-lg transition-shadow border-none h-full flex flex-col">
-                            <div className="mb-6 text-[#9D5951]">
+                            <div className="mb-6 text-terracotta">
                                 <CheckCircle size={32} />
                             </div>
-                            <h3 className="font-cormorant text-2xl font-bold text-[#9D5951] mb-4">Método Validado</h3>
+                            <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Método Validado</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
                                 8 Passos para uma Amamentação de Sucesso: A metodologia exclusiva que estrutura todo o meu atendimento para garantir resultados reais.
                             </p>
-                            <a href="#" className="font-semibold text-[#9D5951] hover:text-[#7A3E3E] inline-flex items-center mt-auto">
+                            <a href="#" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Método →
                             </a>
                         </div>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                 <Container>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="order-2 md:order-1">
-                            <h2 className="font-cormorant text-4xl md:text-5xl text-[#9D5951] mb-8 leading-tight">
+                            <h2 className="font-cormorant text-4xl md:text-5xl text-terracotta mb-8 leading-tight">
                                 No que acredito
                             </h2>
                             <div className="space-y-6 font-raleway text-lg text-gray-600">
@@ -203,7 +203,7 @@ export default function AboutPage() {
             {/* Final CTA */}
             <Section className="bg-white text-center py-24">
                 <Container>
-                    <h2 className="font-cormorant text-4xl md:text-5xl mb-6 leading-tight text-[#9D5951]">
+                    <h2 className="font-cormorant text-4xl md:text-5xl mb-6 leading-tight text-terracotta">
                         Permita-se viver o melhor da amamentação.
                         <span className="block italic text-3xl md:text-4xl mt-2 font-light">Eu estou aqui para guiar você.</span>
                     </h2>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                         href="https://wa.me/5511999494829"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#9D5951] hover:bg-[#7A3E3E] text-white border-none shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg px-10 py-5 rounded-none font-medium mt-8"
+                        className="bg-terracotta hover:bg-[#7A3E3E] text-white border-none shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg px-10 py-5 rounded-none font-medium mt-8"
                     >
                         <FaWhatsapp className="w-6 h-6 mr-2" />
                         Falar com a Camila no WhatsApp
