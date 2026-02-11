@@ -10,6 +10,7 @@ import { ServiceCard } from "@/components/ui/ServiceCard";
 import { ModalityCard } from "@/components/ui/ModalityCard";
 import {
   Heart,
+  Star,
   Baby,
   Calendar,
   MapPin,
@@ -22,6 +23,7 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 export const metadata: Metadata = {
   title: "Acolhimento e Segurança na Amamentação",
@@ -95,16 +97,26 @@ export default function Home() {
       <div className="bg-white py-12 border-b border-beige/20">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-beige/30">
-            <div className="text-center p-4">
+            <div className="text-center p-4 flex flex-col items-center">
               <div className="flex justify-center mb-2">
                 <div className="p-3 bg-cream rounded-none text-terracotta mb-2">
-                  <Heart size={24} />
+                  <Star size={24} />
                 </div>
               </div>
               <p className="font-cormorant text-5xl text-terracotta font-bold">
                 <AnimatedCounter end={185} suffix="+" />
               </p>
               <p className="font-raleway text-gray-500 uppercase tracking-wider text-sm mt-2">Avaliações 5 Estrelas</p>
+              <Link
+                href="https://www.google.com/search?sca_esv=8ed7b9c9fed93e72&sxsrf=ANbL-n60pAT-GUJDKJvrpfL1CUAQE3EHdQ:1770809207317&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTDm51dAIYkE-DbfdX4j4UbwUweZr42Aj9Fm5Dr7_v0l1-Bk6TJWHabPTFSc3kdXngVJudmOGixEazvQ-zLwx8E87wFgQ-fy_q1XQ1rCQEUm5DoOhlamadZzR4xTbB9DgyetrXjegkRih99Q4yif3g5nTJNJOwKLYU-cs5B_FeaGCmkfawwnZl5qVMO7oz1BtGPG6IlJsJI01WVfa1vEhJpiw7dfwT8nJQHrEurC5KrNYxlIEg%3D%3D&q"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 mt-3 text-sm font-medium text-terracotta hover:underline transition-colors group"
+              >
+                <FcGoogle size={20} />
+                <span>Ver no Google</span>
+                <span className="transform transition-transform group-hover:translate-x-1">→</span>
+              </Link>
             </div>
             <div className="text-center p-4">
               <div className="flex justify-center mb-2">
