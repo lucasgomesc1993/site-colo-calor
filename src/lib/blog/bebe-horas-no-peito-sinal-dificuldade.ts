@@ -1,13 +1,13 @@
 import { BlogPost } from "../blog-data";
 
 export const post: BlogPost = {
-    slug: "bebe-horas-no-peito-sinal-dificuldade",
-    title: "Bebê fica horas no peito: normalidade, conforto ou sinal de dificuldade?",
-    category: "Dificuldades na Amamentação",
-    date: "01 de Fevereiro de 2026",
-    author: "Por Camila Toniatti",
-    excerpt: "É comum ouvir que “bebê mama o tempo todo mesmo”. Mas a ciência nos ensina que tempo de peito não é sinônimo de eficácia.",
-    content: `
+  slug: "bebe-horas-no-peito-sinal-dificuldade",
+  title: "Bebê fica horas no peito: normalidade, conforto ou sinal de dificuldade?",
+  category: "Dificuldades na Amamentação",
+  date: "01 de Fevereiro de 2026",
+  author: "Por Camila Toniatti",
+  excerpt: "É comum ouvir que “bebê mama o tempo todo mesmo”. Mas a ciência nos ensina que tempo de peito não é sinônimo de eficácia.",
+  content: `
     <p>É comum ouvir que “bebê mama o tempo todo mesmo”.</p>
     <p>Mas a ciência nos ensina que tempo de peito não é sinônimo de eficácia da mamada.</p>
     
@@ -34,9 +34,10 @@ export const post: BlogPost = {
       <li>Fissuras</li>
       <li>Dor persistente</li>
       <li>Percepção equivocada de “pouco leite”</li>
+      <li>Baixo ganho de peso do bebê</li>
     </ul>
 
     <p class="mt-8 font-medium text-terracotta">👉 Amamentar com qualidade é mais importante do que amamentar por horas.</p>
   `,
-    image: "/images/blog/blog-horas-peito.webp"
+  image: "/images/blog/blog-horas-peito.webp"
 };

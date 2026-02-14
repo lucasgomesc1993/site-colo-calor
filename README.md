@@ -18,7 +18,7 @@ O projeto utiliza as ferramentas mais modernas do ecossistema Web:
 O design foi concebido para transmitir calma, segurança e profissionalismo, utilizando uma paleta de cores terrosas e tipografia elegante.
 
 - **Cores principais:** 
-  - Terracotta (`#ad665d`)
+  - Terracotta (`#c94159`)
   - Bege (`#E7D0BC`)
   - Creme (`#F7EBE0`)
 - **Tipografia:** 

@@ -1,13 +1,13 @@
 import { BlogPost } from "../blog-data";
 
 export const post: BlogPost = {
-    slug: "preparacao-amamentar-gestacao",
-    title: "Preparação para Amamentar na Gestação: onde tudo começa de verdade",
-    category: "Gestação",
-    date: "31 de Janeiro de 2026",
-    author: "Por Camila Toniatti",
-    excerpt: "A amamentação não começa na primeira mamada. Ela começa na informação que a mulher recebe ainda grávida.",
-    content: `
+  slug: "preparacao-amamentar-gestacao",
+  title: "Preparação para Amamentar na Gestação: onde tudo começa de verdade",
+  category: "Gestação",
+  date: "31 de Janeiro de 2026",
+  author: "Por Camila Toniatti",
+  excerpt: "A amamentação não começa na primeira mamada. Ela começa na informação que a mulher recebe ainda grávida — ou na ausência dela.",
+  content: `
     <p>A amamentação não começa na primeira mamada.</p>
     <p>Ela começa na informação que a mulher recebe ainda grávida — ou na ausência dela.</p>
     <p>Diversos estudos publicados no <em>Journal of Human Lactation</em> e diretrizes da Organização Mundial da Saúde demonstram que gestantes que recebem orientação estruturada durante a gravidez apresentam menor incidência de dor, fissuras e desmame precoce, além de maior autoconfiança no pós-parto.</p>
@@ -36,5 +36,5 @@ export const post: BlogPost = {
 
     <p class="mt-8 font-medium text-terracotta">Preparar-se na gestação não é exagero. É prevenção baseada em evidência.</p>
   `,
-    image: "/images/blog/blog-preparacao-gestacao.webp"
+  image: "/images/blog/blog-preparacao-gestacao.webp"
 };

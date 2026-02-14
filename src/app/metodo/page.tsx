@@ -340,18 +340,19 @@ export default function MetodoPage() {
 
             {/* Formula Cost Section */}
             {/* Formula Cost Section */}
-            <Section className="relative text-white overflow-hidden">
+            <Section className="relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/fundo.webp"
+                        src="/images/fundo-2.webp"
                         alt="Fundo decorativo"
                         fill
                         className="object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-transparent" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="font-cormorant text-4xl md:text-5xl text-center mb-12">O custo de desistir da amamentação</h2>
+                        <h2 className="font-cormorant text-4xl md:text-5xl text-terracotta text-center mb-12">O custo de desistir da amamentação</h2>
 
                         <div className="grid md:grid-cols-2 gap-12">
                             <div className="bg-cream p-8 md:p-12 shadow-2xl relative text-gray-800">

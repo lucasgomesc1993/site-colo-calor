@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { MapPin } from "lucide-react";
+import { MapPin, Globe } from "lucide-react";
 import { FaWhatsapp, FaInstagram, FaYoutube, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -75,11 +75,11 @@ export function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:metodocoloecalor@gmail.com" className="group flex items-center gap-3 text-white/70 hover:text-white transition-all duration-200">
+                                <a href="mailto:coloecalor@gmail.com" className="group flex items-center gap-3 text-white/70 hover:text-white transition-all duration-200">
                                     <span className="p-2 bg-white/5 group-hover:bg-white/10 rounded-lg transition-colors">
                                         <FaEnvelope size={18} />
                                     </span>
-                                    <span className="break-all">metodocoloecalor@gmail.com</span>
+                                    <span className="break-all">coloecalor@gmail.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -105,6 +105,16 @@ export function Footer() {
                                         <li>Vale do Ribeira</li>
                                         <li>Vale do Paraíba</li>
                                     </ul>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-3 text-white/70 group">
+                                <span className="p-2 bg-white/5 group-hover:bg-white/10 h-fit rounded-lg transition-colors">
+                                    <Globe size={18} className="text-beige" />
+                                </span>
+                                <div>
+                                    <p className="font-semibold text-white mb-1">Atendimento Online:</p>
+                                    <p className="leading-relaxed">Brasil e Mundo todo</p>
                                 </div>
                             </div>
                         </div>

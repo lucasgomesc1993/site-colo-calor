@@ -1,13 +1,13 @@
 import { BlogPost } from "../blog-data";
 
 export const post: BlogPost = {
-    slug: "baixa-producao-de-leite-mitos-verdades",
-    title: "Baixa produção de leite: mito, percepção ou realidade?",
-    category: "Dificuldades na Amamentação",
-    date: "02 de Fevereiro de 2026",
-    author: "Por Camila Toniatti",
-    excerpt: "A verdadeira incapacidade fisiológica de produzir leite é rara. Na maioria das vezes, o problema está em fatores externos e suporte inadequado.",
-    content: `
+  slug: "baixa-producao-de-leite-mitos-verdades",
+  title: "Baixa produção de leite: mito, percepção ou realidade?",
+  category: "Dificuldades na Amamentação",
+  date: "02 de Fevereiro de 2026",
+  author: "Por Camila Toniatti",
+  excerpt: "A verdadeira incapacidade fisiológica de produzir leite é rara. A OMS estima menos de 5% dos casos.",
+  content: `
     <p>A verdadeira incapacidade fisiológica de produzir leite é rara.</p>
     <p>A OMS estima menos de 5% dos casos.</p>
     
@@ -28,5 +28,5 @@ export const post: BlogPost = {
 
     <p class="mt-8 font-medium text-terracotta text-lg font-cormorant">👉 Antes de concluir que “não tem leite”, é preciso olhar o processo como um todo.</p>
   `,
-    image: "/images/blog/blog-baixa-producao.webp"
+  image: "/images/blog/blog-baixa-producao.webp"
 };

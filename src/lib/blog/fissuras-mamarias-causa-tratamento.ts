@@ -1,13 +1,13 @@
 import { BlogPost } from "../blog-data";
 
 export const post: BlogPost = {
-    slug: "fissuras-mamarias-causa-tratamento",
-    title: "Fissuras Mamárias: além da ferida visível",
-    category: "Dificuldades na Amamentação",
-    date: "01 de Fevereiro de 2026",
-    author: "Por Camila Toniatti",
-    excerpt: "As fissuras não são apenas machucados. Elas representam um desequilíbrio na dinâmica da amamentação.",
-    content: `
+  slug: "fissuras-mamarias-causa-tratamento",
+  title: "Fissuras Mamárias: além da ferida visível",
+  category: "Dificuldades na Amamentação",
+  date: "01 de Fevereiro de 2026",
+  author: "Por Camila Toniatti",
+  excerpt: "As fissuras não são apenas machucados. Elas representam um desequilíbrio na dinâmica da amamentação.",
+  content: `
     <p>As fissuras não são apenas machucados.</p>
     <p>Elas representam um desequilíbrio na dinâmica da amamentação.</p>
     <p>Estudos do <em>Cochrane Database</em> apontam que tratar apenas a lesão, sem corrigir a causa, resulta em recorrência.</p>
@@ -36,5 +36,5 @@ export const post: BlogPost = {
 
     <p class="mt-8 font-medium text-terracotta">👉 Tratar fissuras é cuidar do corpo e da história daquela mãe.</p>
   `,
-    image: "/images/blog/blog-fissuras-mamarias.webp"
+  image: "/images/problems/fissura-dor.webp"
 };

@@ -213,20 +213,21 @@ export default function Home() {
       <Section id="servicos" className="relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/fundo.webp"
+            src="/images/fundo-2.webp"
             alt="Fundo decorativo"
             fill
             className="object-cover"
             priority={false}
             sizes="100vw"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-transparent" />
         </div>
         <Container className="relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="inline-block px-4 py-1 rounded-none border border-terracotta/20 bg-white mb-4">
               <span className="text-terracotta text-sm font-medium">Serviços em Destaque</span>
             </div>
-            <h2 className="font-cormorant text-5xl text-white mb-4 font-medium">
+            <h2 className="font-cormorant text-5xl text-terracotta mb-4 font-medium">
               Serviços pensados para cada fase da sua <span className="italic">jornada materna</span>
             </h2>
           </div>
@@ -271,7 +272,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button href="/servicos" className="!bg-[#E7D0BC] hover:!bg-[#D4B8A0] !text-terracotta font-bold">Ver todos os serviços</Button>
+            <Button href="/servicos" className="bg-terracotta hover:bg-[#7A3E3E] text-white font-bold shadow-md">Ver todos os serviços</Button>
           </div>
         </Container>
       </Section>

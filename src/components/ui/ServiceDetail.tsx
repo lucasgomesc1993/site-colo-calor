@@ -22,6 +22,7 @@ interface ServiceDetailProps {
     bgVariant?: 'white' | 'beige';
     id?: string;
     locations?: string[];
+    preCtaText?: string;
 }
 
 export function ServiceDetail({
@@ -41,7 +42,8 @@ export function ServiceDetail({
     reversed = false,
     bgVariant,
     id,
-    locations = []
+    locations = [],
+    preCtaText
 }: ServiceDetailProps) {
     const bgColor = bgVariant
         ? (bgVariant === 'white' ? 'bg-white' : 'bg-cream')
@@ -50,7 +52,7 @@ export function ServiceDetail({
     return (
         <section id={id} className={`py-16 md:py-24 scroll-mt-20 md:scroll-mt-24 ${bgColor}`}>
             <Container>
-                <div className={`flex flex-col md:flex-row gap-12 md:gap-20 items-center ${reversed ? 'md:flex-row-reverse' : ''}`}>
+                <div className={`flex flex-col md:flex-row gap-12 md:gap-20 items-center md:items-start ${reversed ? 'md:flex-row-reverse' : ''}`}>
 
                     {/* Image Column */}
                     <div className="w-full md:w-1/2">
@@ -109,6 +111,12 @@ export function ServiceDetail({
                                 </div>
                             )}
                         </div>
+
+                        {preCtaText && (
+                            <p className="font-cormorant text-terracotta italic text-xl mb-6 max-w-lg">
+                                {preCtaText}
+                            </p>
+                        )}
 
                         <Button href={ctaLink} size="lg" target={target} rel={rel}>
                             {ctaLabel}

@@ -66,16 +66,16 @@ export default function AboutPage() {
                         </h2>
                         <div className="prose prose-lg max-w-none text-gray-600 font-raleway">
                             <p className="mb-6">
-                                Minha jornada de maternidade, como mãe de duas meninas maravilhosas, foi marcada por grandes desafios, especialmente no puerpério e na amamentação. Foram momentos de dor, insegurança e, muitas vezes, de solidão.
+                                Minha jornada de maternidade, como mãe de duas meninas maravilhosas, foi marcada por <strong>grandes desafios</strong>, especialmente no puerpério e na amamentação. Foram momentos de dor, insegurança e, muitas vezes, de solidão.
                             </p>
                             <p className="mb-10">
-                                Essa experiência profunda me fez entender, na pele e no coração, os verdadeiros desafios que todas nós, mães, enfrentamos. Foi esse o ponto de virada que me impulsionou: em 2020, decidi transformar minha dor em propósito e me tornei Consultora em Aleitamento Materno.
+                                Essa experiência profunda me fez entender, na pele e no coração, os <strong>verdadeiros desafios</strong> que todas nós, mães, enfrentamos. Foi esse o ponto de virada que me impulsionou: em 2020, decidi transformar minha dor em propósito e me tornei <strong>Consultora em Aleitamento Materno</strong>.
                             </p>
 
                             <div className="relative p-8 md:p-12 bg-[#F9F4EF] rounded-none my-12 text-center">
                                 <Quote className="absolute top-4 left-4 text-[#E7D0BC] opacity-50" size={40} />
                                 <p className="font-cormorant text-2xl md:text-3xl text-terracotta italic leading-relaxed relative z-10">
-                                    "Percebi o quanto eu poderia mudar a trajetória e a experiência de centenas de famílias, transformando angústia em alívio, confiança e alegria."
+                                    "Percebi o quanto eu poderia <strong>mudar a trajetória e a experiência</strong> de centenas de famílias, transformando angústia em alívio, confiança e alegria."
                                 </p>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
             <Section className="relative text-white overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/fundo.webp"
+                        src="/images/fundo-2.webp"
                         alt="Fundo decorativo"
                         fill
                         className="object-cover"
@@ -98,7 +98,7 @@ export default function AboutPage() {
                         <div className="text-center">
                             <h2 className="font-cormorant text-4xl md:text-5xl mb-6 text-terracotta">Minha Missão</h2>
                             <p className="font-raleway text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                                Fazer com que você amamente sem dor, com confiança total e desfrute de cada momento.
+                                Fazer com que você amamente sem dor, <strong>com confiança total</strong> e desfrute de cada momento.
                             </p>
 
                             <div className="bg-white p-8 rounded-none border border-terracotta/20 inline-block shadow-sm">
@@ -131,7 +131,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Bem Gestar</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
-                                Idealizadora do Bem Gestar - Seu Guia, Seu Momento: O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua 9ª edição, preparando mães e pais para o momento mais importante de suas vidas.
+                                <strong>Idealizadora do Bem Gestar - Seu Guia, Seu Momento:</strong> O maior evento preparatório para gestantes de Mogi das Cruzes, já em sua <strong>7ª edição</strong>, preparando mães e pais para o momento mais importante de suas vidas.
                             </p>
                             <a href="https://www.instagram.com/bemgestaroficial/" target="_blank" rel="noopener noreferrer" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o Bem Gestar →
@@ -145,7 +145,7 @@ export default function AboutPage() {
                             </div>
                             <h3 className="font-cormorant text-2xl font-bold text-terracotta mb-4">Coautora</h3>
                             <p className="font-raleway text-[#8E7878] mb-6 flex-grow">
-                                Livro Conhe'Ser Você na Maternidade: Onde compartilho minha experiência pessoal, aliada a informações técnicas e práticas essenciais sobre amamentação.
+                                <strong>Coautora do Livro Conhe'Ser Você na Maternidade:</strong> Onde compartilho minha experiência pessoal, aliada a informações técnicas e práticas essenciais sobre amamentação.
                             </p>
                             <a href="https://www.amazon.com.br/ConheSer-Voc%C3%AA-Maternidade-Vol-02/dp/6525176778" target="_blank" rel="noopener noreferrer" className="font-semibold text-terracotta hover:text-[#7A3E3E] inline-flex items-center mt-auto">
                                 Conhecer o livro →
@@ -179,13 +179,13 @@ export default function AboutPage() {
                             </h2>
                             <div className="space-y-6 font-raleway text-lg text-gray-600">
                                 <p>
-                                    Eu acredito, de verdade, que a amamentação muda o mundo.
+                                    <strong>Eu acredito, de verdade, que a amamentação muda o mundo.</strong>
                                 </p>
                                 <p>
-                                    Amamentar não é apenas sobre nutrição de "padrão ouro". É um ato que envolve a produção e liberação de uma cascata de "hormônios do Bem" que trazem bem-estar e segurança para você e seu bebê.
+                                    Amamentar não é apenas sobre nutrição de "padrão ouro". É um ato que envolve a produção e liberação de uma cascata de <strong>"hormônios do Bem"</strong> que trazem bem-estar e segurança para você e seu bebê.
                                 </p>
                                 <p>
-                                    Quando um bebê se sente amado, seguro e acolhido desde o seu primeiro relacionamento fora do útero, por uma mãe feliz e confiante, ele floresce. E é essa base sólida que fará toda a diferença na sociedade que estamos construindo.
+                                    Quando um bebê se sente amado, seguro e acolhido desde o seu primeiro relacionamento fora do útero, por uma mãe feliz e confiante, <strong>ele floresce</strong>. E é essa base sólida que fará toda a diferença na sociedade que estamos construindo.
                                 </p>
                             </div>
                         </div>
@@ -205,8 +205,8 @@ export default function AboutPage() {
             <Section className="bg-white text-center py-24">
                 <Container>
                     <h2 className="font-cormorant text-4xl md:text-5xl mb-6 leading-tight text-terracotta">
-                        Permita-se viver o melhor da amamentação.
-                        <span className="block italic text-3xl md:text-4xl mt-2 font-light">Eu estou aqui para guiar você.</span>
+                        <strong>Permita-se viver o melhor da amamentação.</strong>
+                        <span className="block italic text-3xl md:text-4xl mt-2 font-bold text-terracotta">Eu estou aqui para guiar você.</span>
                     </h2>
                     <Button
                         href="https://wa.me/5511999494829"

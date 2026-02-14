@@ -1,13 +1,13 @@
 import { BlogPost } from "../blog-data";
 
 export const post: BlogPost = {
-    slug: "laserterapia-na-amamentacao-ciencia-e-cuidado",
-    title: "Laserterapia na amamentação: ciência aplicada ao cuidado",
-    category: "Tratamentos",
-    date: "03 de Fevereiro de 2026",
-    author: "Por Camila Toniatti",
-    excerpt: "A laserterapia de baixa intensidade tem respaldo científico crescente, oferecendo alívio da dor e aceleração da cicatrização.",
-    content: `
+  slug: "laserterapia-na-amamentacao-ciencia-e-cuidado",
+  title: "Laserterapia na amamentação: ciência aplicada ao cuidado",
+  category: "Tratamentos",
+  date: "03 de Fevereiro de 2026",
+  author: "Por Camila Toniatti",
+  excerpt: "A laserterapia de baixa intensidade tem respaldo científico crescente, oferecendo alívio da dor e aceleração da cicatrização.",
+  content: `
     <p>A laserterapia de baixa intensidade tem respaldo científico crescente.</p>
     <p>Estudos demonstram que a fotobiomodulação pode transformar a experiência do pós-parto e da amamentação.</p>
     
@@ -28,5 +28,5 @@ export const post: BlogPost = {
 
     <p class="mt-8 font-medium text-terracotta text-lg font-cormorant">👉 Tecnologia aliada ao cuidado humanizado.</p>
   `,
-    image: "/images/blog/blog-laserterapia.webp"
+  image: "/images/laser-blog.webp"
 };
