@@ -359,7 +359,7 @@ export default function ServicesPage() {
                                 rel="noopener noreferrer"
                                 variant="secondary"
                                 size="lg"
-                                className="!bg-beige !text-terracotta hover:!bg-[#dcbca0] transition-all duration-300 px-8 py-4 text-base font-bold uppercase tracking-wider shadow-md"
+                                className="!bg-white !text-terracotta hover:!bg-[#FFF0F3] transition-all duration-300 px-8 py-4 text-base font-bold uppercase tracking-wider shadow-md"
                             >
                                 Falar com a consultora no WhatsApp
                             </Button>

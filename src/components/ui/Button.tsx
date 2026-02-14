@@ -27,9 +27,9 @@ export function Button({
     const baseStyles = 'inline-flex items-center justify-center rounded-none font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
     const variants = {
-        primary: 'bg-terracotta text-white hover:bg-[#8a4d46] focus:ring-terracotta',
-        secondary: 'bg-beige text-terracotta hover:bg-[#dcbca0] focus:ring-beige',
-        outline: 'border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-white focus:ring-terracotta',
+        primary: 'bg-terracotta text-white hover:bg-[#A6283E] focus:ring-terracotta',
+        secondary: 'bg-beige text-terracotta hover:bg-[#FFF0F3] focus:ring-beige',
+        outline: 'border-2 border-terracotta text-terracotta hover:bg-[#FFF0F3] hover:text-terracotta focus:ring-terracotta',
         text: 'text-terracotta hover:text-[#8a4d46] underline-offset-4 hover:underline p-0',
     };
 

@@ -75,7 +75,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 size="lg"
-                className="w-full sm:w-auto !bg-[#FDFBF7] hover:!bg-[#E7D0BC] !text-terracotta font-bold shadow-sm rounded-none px-8 py-4 justify-center transition-all duration-300"
+                className="w-full sm:w-auto !bg-[#FDFBF7] hover:!bg-[#FFF0F3] !text-terracotta font-bold shadow-sm rounded-none px-8 py-4 justify-center transition-all duration-300"
               >
                 <FaWhatsapp className="w-5 h-5 mr-2" />
                 Preciso de ajuda agora
@@ -84,7 +84,7 @@ export default function Home() {
                 href="/metodo"
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto border-white text-white hover:bg-white/10 rounded-none px-8 py-4 text-base font-medium justify-center"
+                className="w-full sm:w-auto border-white text-white hover:bg-[#FFF0F3] hover:text-terracotta rounded-none px-8 py-4 text-base font-medium justify-center"
               >
                 Conhecer o Método Colo & Calor
               </Button>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Button href="/servicos" className="bg-terracotta hover:bg-[#7A3E3E] text-white font-bold shadow-md">Ver todos os serviços</Button>
+            <Button href="/servicos" className="bg-terracotta hover:bg-[#A6283E] text-white font-bold shadow-md">Ver todos os serviços</Button>
           </div>
         </Container>
       </Section>
@@ -337,7 +337,7 @@ export default function Home() {
             href="https://wa.me/5511999494829"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-terracotta hover:bg-[#7A3E3E] text-white border-none shadow-md transition-all duration-300 text-lg px-8 py-4 rounded-none font-medium"
+            className="bg-terracotta hover:bg-[#A6283E] text-white border-none shadow-md transition-all duration-300 text-lg px-8 py-4 rounded-none font-medium"
           >
             <FaWhatsapp className="w-5 h-5 mr-2" />
             Falar com a consultora no WhatsApp

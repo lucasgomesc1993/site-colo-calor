@@ -212,7 +212,7 @@ export default function AboutPage() {
                         href="https://wa.me/5511999494829"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-terracotta hover:bg-[#7A3E3E] text-white border-none shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg px-10 py-5 rounded-none font-medium mt-8"
+                        className="bg-terracotta hover:bg-[#7A3E3E] text-white border-none shadow-xl text-lg px-10 py-5 rounded-none font-medium mt-8"
                     >
                         <FaWhatsapp className="w-6 h-6 mr-2" />
                         Falar com a Camila no WhatsApp

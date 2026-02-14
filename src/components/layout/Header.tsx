@@ -75,7 +75,7 @@ export function Header() {
                                 <Button
                                     size="sm"
                                     variant="outline"
-                                    className={`!border-white !text-white hover:!bg-white/10 font-bold px-6 focus:!ring-0 focus:!ring-offset-0`}
+                                    className={`!border-white !text-white hover:!bg-[#FFF0F3] hover:!text-terracotta font-bold px-6 focus:!ring-0 focus:!ring-offset-0`}
                                 >
                                     Método
                                 </Button>
@@ -150,7 +150,7 @@ export function Header() {
                                 <Button
                                     variant="outline"
                                     size="lg"
-                                    className={`w-full !border-white !text-white hover:!bg-white/10 font-bold text-lg focus:!ring-0 focus:!ring-offset-0`}
+                                    className={`w-full !border-white !text-white hover:!bg-[#FFF0F3] hover:!text-terracotta font-bold text-lg focus:!ring-0 focus:!ring-offset-0`}
                                 >
                                     Conhecer Método
                                 </Button>

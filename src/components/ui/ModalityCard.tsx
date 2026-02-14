@@ -62,7 +62,7 @@ export function ModalityCard({
                 <Button
                     href={href}
                     variant={isPrimary ? 'secondary' : 'primary'}
-                    className={`mt-auto w-full !whitespace-nowrap !text-sm sm:!text-base !px-2 sm:!px-6 ${isPrimary ? '!bg-white !text-terracotta hover:!bg-white/90' : ''}`}
+                    className={`mt-auto w-full !whitespace-nowrap !text-sm sm:!text-base !px-2 sm:!px-6 ${isPrimary ? '!bg-white !text-terracotta hover:!bg-[#FFF0F3]' : ''}`}
                 >
                     {actionLabel}
                 </Button>
