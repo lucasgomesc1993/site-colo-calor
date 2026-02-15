@@ -8,6 +8,8 @@ import { FaWhatsapp, FaYoutube, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
 import { BreadcrumbSchema } from "@/components/seo/Schemas";
+import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 const steps = [
     {
@@ -74,6 +76,7 @@ const faqs = [
 export default function MetodoPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [showVideo, setShowVideo] = useState(false);
+    const [showTestimonialVideo, setShowTestimonialVideo] = useState(false);
 
     return (
         <main className="min-h-screen pt-20">
@@ -121,8 +124,8 @@ export default function MetodoPage() {
                                         <FaYoutube className="text-white text-4xl" />
                                     </div>
                                 </div>
-                                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
-                                    <p className="text-white font-raleway text-sm font-bold uppercase tracking-widest">Clique para assistir</p>
+                                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 px-3 py-1.5 md:px-4 md:py-2 rounded-full backdrop-blur-sm whitespace-nowrap">
+                                    <p className="text-white font-raleway text-[10px] md:text-xs font-medium">Clique para assistir</p>
                                 </div>
                             </button>
                         ) : (
@@ -272,6 +275,40 @@ export default function MetodoPage() {
                         ))}
                     </div>
 
+                    {/* Video Shorts Testimonial - Facade Pattern */}
+                    <div className="max-w-[320px] mx-auto aspect-[9/16] mt-16 mb-12 shadow-2xl relative group bg-black overflow-hidden rounded-2xl border-4 border-white">
+                        {!showTestimonialVideo ? (
+                            <button
+                                onClick={() => setShowTestimonialVideo(true)}
+                                className="w-full h-full relative flex items-center justify-center group cursor-pointer"
+                                aria-label="Reproduzir depoimento em vídeo"
+                            >
+                                <Image
+                                    src="https://img.youtube.com/vi/CLEub2Z__0s/hqdefault.jpg"
+                                    alt="Depoimento em Vídeo"
+                                    fill
+                                    className="object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                                />
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="w-16 h-16 bg-terracotta/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 pl-1">
+                                        <FaYoutube className="text-white text-3xl" />
+                                    </div>
+                                </div>
+                                <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 bg-black/50 px-3 py-1.5 md:px-4 md:py-2 rounded-full backdrop-blur-sm w-max whitespace-nowrap">
+                                    <p className="text-white font-raleway text-[10px] md:text-xs font-medium leading-none">Ver Depoimento</p>
+                                </div>
+                            </button>
+                        ) : (
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/CLEub2Z__0s?autoplay=1"
+                                title="Depoimento Método Colo & Calor"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        )}
+                    </div>
+
                     <div className="mt-20 text-center">
                         <Button
                             href="https://lastlink.com/p/C00A5AE1C/checkout-payment"
@@ -280,10 +317,23 @@ export default function MetodoPage() {
                         >
                             QUERO COMEÇAR MEU PLANO DE RESGATE AGORA
                         </Button>
-                        <div className="flex items-center justify-center gap-4 mt-6 text-sm text-gray-500 font-medium">
-                            <span className="flex items-center gap-1"><Users size={16} /> Método aplicado por mais de 600 mães</span>
-                            <span>•</span>
-                            <span className="flex items-center gap-1"><ShieldCheck size={16} /> Garantia de 7 dias</span>
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 mt-6 text-sm text-gray-500 font-medium">
+                            <span className="flex items-center gap-2"><Users size={16} className="text-terracotta" /> Método aplicado por mais de 600 mães</span>
+                            <span className="hidden md:inline text-terracotta">•</span>
+                            <span className="flex items-center gap-2"><ShieldCheck size={16} className="text-terracotta" /> Garantia de 7 dias</span>
+                        </div>
+
+                        <div className="flex justify-center mt-4">
+                            <Link
+                                href="https://www.google.com/search?sca_esv=8ed7b9c9fed93e72&sxsrf=ANbL-n60pAT-GUJDKJvrpfL1CUAQE3EHdQ:1770809207317&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTDm51dAIYkE-DbfdX4j4UbwUweZr42Aj9Fm5Dr7_v0l1-Bk6TJWHabPTFSc3kdXngVJudmOGixEazvQ-zLwx8E87wFgQ-fy_q1XQ1rCQEUm5DoOhlamadZzR4xTbB9DgyetrXjegkRih99Q4yif3g5nTJNJOwKLYU-cs5B_FeaGCmkfawwnZl5qVMO7oz1BtGPG6IlJsJI01WVfa1vEhJpiw7dfwT8nJQHrEurC5KrNYxlIEg%3D%3D&q"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 text-sm font-medium text-terracotta hover:underline transition-colors group"
+                            >
+                                <FcGoogle size={20} />
+                                <span>Ver no Google</span>
+                                <span className="transform transition-transform group-hover:translate-x-1">→</span>
+                            </Link>
                         </div>
                     </div>
                 </Container>

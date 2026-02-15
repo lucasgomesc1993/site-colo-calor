@@ -77,7 +77,7 @@ export function Header() {
                                     variant="outline"
                                     className={`!border-white !text-white hover:!bg-[#FFF0F3] hover:!text-terracotta font-bold px-6 focus:!ring-0 focus:!ring-offset-0`}
                                 >
-                                    Método
+                                    Resgate sua amamentação com Método Colo & Calor
                                 </Button>
                             </Link>
                             <Button
@@ -152,7 +152,7 @@ export function Header() {
                                     size="lg"
                                     className={`w-full !border-white !text-white hover:!bg-[#FFF0F3] hover:!text-terracotta font-bold text-lg focus:!ring-0 focus:!ring-offset-0`}
                                 >
-                                    Conhecer Método
+                                    Resgate sua amamentação com Método Colo & Calor
                                 </Button>
                             </Link>
                             <Button
